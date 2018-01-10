@@ -1,0 +1,14 @@
+{
+  "name": "bth-scribe",
+  "version": "1.0.0",
+  "description": "Convert midi files to boethius",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sean Mullen",
+  "license": "ISC",
+  "dependencies": {
+    "midi-file": "^1.0.2"
+  }
+}
