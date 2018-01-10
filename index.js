@@ -9,23 +9,29 @@ const midi = parseMidi(file);
 // Stop execution if midi is wrong format.
 if (midi.header.format !== 1) throw new Error("Incorrect midi format. Only format 1 supported");
 
+const timeSignature = midi.tracks[0].find(e => e.type === 'timeSignature');
+
 const tracks = [];
 for (let i = 1; i < midi.header.numTracks; i++) {
-    tracks.push(createTrack(`track_${i}`, midi.tracks[i]));
+    tracks.push(createTrack(`track${i}`, midi.tracks[i]));
 }
 
 const output = tracks.reduce((str, track) => {
     return str + track + '\n';
 }, '');
 
-fs.writeFileSync('./output.bth', output);
+fs.writeFileSync('./bth/output.bth', output);
 
 function createTrack (name, events) {
-    notes = events.reduce((acc, event) => {
+    const notes = events.reduce((acc, event) => {
         if (event.type === 'noteOn') {
-            return acc.concat(teoria.note.fromMIDI(event.noteNumber).scientific() + ' ');
+            acc.currentEvent = event;
+        } else if (event.type === 'noteOff') {
+            // const duration = (midi.header.ticksPerBeat / event.deltaTime) * 4;
+            const duration = 16;
+            acc.str = acc.str.concat(teoria.note.fromMIDI(event.noteNumber).scientific() + `/${duration} `);
         }
         return acc;
-    }, '');
-    return `[${name} ${notes}]`;
+    }, {str: '', currentNote: null});
+    return `[${name} ${notes.str}]`;
 }

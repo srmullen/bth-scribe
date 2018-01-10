@@ -6,5 +6,6 @@ lib
 .tags
 .tags1
 dist
-output.bth
 midi
+temp
+temp.js
