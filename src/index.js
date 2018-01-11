@@ -27,9 +27,8 @@ function createTrack (name, events) {
         if (event.type === 'noteOn') {
             acc.currentEvent = event;
         } else if (event.type === 'noteOff') {
-            // const duration = (midi.header.ticksPerBeat / event.deltaTime) * 4;
-            const duration = 16;
-            acc.str = acc.str.concat(teoria.note.fromMIDI(event.noteNumber).scientific() + `/${duration} `);
+            const duration = ticksToDuration(midi.header.ticksPerBeat, event.deltaTime);
+            acc.str = acc.str.concat(teoria.note.fromMIDI(event.noteNumber).scientific() + `/${duration.value} `);
         }
         return acc;
     }, {str: '', currentNote: null});
