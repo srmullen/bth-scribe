@@ -1,6 +1,7 @@
 const fs = require('fs');
 const parseMidi = require('midi-file').parseMidi;
 const teoria = require('teoria');
+const {ticksToDuration, trackToString} = require('./utils');
 
 const file = fs.readFileSync('./midi/invent/invent4.mid');
 
@@ -17,20 +18,21 @@ for (let i = 1; i < midi.header.numTracks; i++) {
 }
 
 const output = tracks.reduce((str, track) => {
-    return str + track + '\n';
+    return str + trackToString(track) + '\n\n';
 }, '');
 
 fs.writeFileSync('./bth/output.bth', output);
 
 function createTrack (name, events) {
-    const notes = events.reduce((acc, event) => {
+    const notes = events.reduce((acc, event, i) => {
         if (event.type === 'noteOn') {
             acc.currentEvent = event;
         } else if (event.type === 'noteOff') {
-            const duration = ticksToDuration(midi.header.ticksPerBeat, event.deltaTime);
-            acc.str = acc.str.concat(teoria.note.fromMIDI(event.noteNumber).scientific() + `/${duration.value} `);
+            const note = teoria.note.fromMIDI(event.noteNumber);
+            note.duration = ticksToDuration(midi.header.ticksPerBeat, event.deltaTime);
+            acc.events = acc.events.concat(note);
         }
         return acc;
-    }, {str: '', currentNote: null});
-    return `[${name} ${notes.str}]`;
+    }, {events: [], currentNote: null, name});
+    return notes;
 }

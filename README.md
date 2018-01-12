@@ -9,3 +9,4 @@ TODO
 - Key signature input.
 - command line args. i.e. Input/output files. Rules for output format
 - Event grouping options.
+- Detect trills

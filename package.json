@@ -9,6 +9,7 @@
   "author": "Sean Mullen",
   "license": "ISC",
   "dependencies": {
+    "fraction.js": "^4.0.4",
     "midi-file": "^1.0.2",
     "teoria": "^2.5.0"
   },
