@@ -12,8 +12,6 @@ function ticksToDuration (ticksPerBeat, deltaTime) {
         // Check if it is a double-dotted value
         reduced = ticksPerBeat / (deltaTime / 1.75) * 4;
         if (DURATION_VALUES.indexOf(reduced) > -1) {
-            // value = reduced
-            // dots = 1;
             return {value: reduced, dots: 2};
         }
     }
