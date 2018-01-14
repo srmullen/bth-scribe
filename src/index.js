@@ -1,9 +1,10 @@
 const fs = require('fs');
 const parseMidi = require('midi-file').parseMidi;
 const teoria = require('teoria');
-const {ticksToDuration, trackToString} = require('./utils');
+const {ticksToDuration, trackToString, setAbsoluteTicks, setQuantization} = require('./utils');
 
 const file = fs.readFileSync('./midi/invent/invent4.mid');
+// const file = fs.readFileSync('./midi/Notes_and_Rests.mid');
 
 const midi = parseMidi(file);
 
@@ -11,9 +12,16 @@ const midi = parseMidi(file);
 if (midi.header.format !== 1) throw new Error("Incorrect midi format. Only format 1 supported");
 
 const timeSignature = midi.tracks[0].find(e => e.type === 'timeSignature');
+// sixtyfourth note quantization.
+const QUANTIZATION = midi.header.ticksPerBeat / 16;
+
+// Check that quantization value isn't fractional.
+if (Math.floor(QUANTIZATION) !== QUANTIZATION) throw new Error(`Bad quantization value: ${QUANTIZATION}`);
 
 const tracks = [];
-for (let i = 1; i < midi.header.numTracks; i++) {
+for (let i = 0; i < midi.header.numTracks; i++) {
+    setAbsoluteTicks(midi.tracks[i]);
+    setQuantization(QUANTIZATION, midi.tracks[i]);
     tracks.push(createTrack(`track${i}`, midi.tracks[i]));
 }
 
@@ -30,6 +38,9 @@ function createTrack (name, events) {
         } else if (event.type === 'noteOff') {
             const note = teoria.note.fromMIDI(event.noteNumber);
             note.duration = ticksToDuration(midi.header.ticksPerBeat, event.deltaTime);
+            // const ticks = event.quantizedTime - acc.currentEvent.quantizedTime;
+            // console.log(event.quantizedTime, ticks);
+            // note.duration = ticksToDuration(midi.header.ticksPerBeat, ticks);
             acc.events = acc.events.concat(note);
         }
         return acc;

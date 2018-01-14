@@ -1,6 +1,8 @@
 const {expect} = require('chai');
 const teoria = require('teoria');
-const {ticksToDuration, trackToString} = require('../src/utils');
+const {
+    ticksToDuration, trackToString, setAbsoluteTicks, setQuantization
+} = require('../src/utils');
 
 describe('Tests', () => {
     describe('ticksToDuration', () => {
@@ -138,6 +140,57 @@ describe('Tests', () => {
                 name: 'track1',
                 events: [teoria.note('a4'), teoria.note('c#5', {value: 8, dots: 1})]
             })).to.equal('[track1 A4/4 C#5/8. ]');
+        });
+    });
+
+    describe('setAbsoluteTicks', () => {
+        it('takes an array of midi events and sets the absolute time in ticks on each event', () => {
+            const track = [{deltaTime: 0}, {deltaTime: 10}, {deltaTime: 0}, {deltaTime: 20}, {deltaTime: 0}];
+            setAbsoluteTicks(track);
+            expect(track.map(event => event.absoluteTime)).to.eql([0, 10, 10, 30, 30]);
+        });
+    });
+
+    describe('setQuantization', () => {
+        it('should set quantizedTime and quantizedDelta properties', () => {
+            // const track = setAbsoluteTicks([{deltaTime: 0}, {deltaTime: 10}, {deltaTime: 0}, {deltaTime: 20}, {deltaTime: 0}]);
+            const track = [{deltaTime: 0, absoluteTime: 5}];
+            setQuantization(5, track);
+            expect(track[0].quantizedTime).to.equal(5);
+            expect(track[0].quantizedDelta).to.equal(0);
+        });
+
+        it('should move a note onto the beat if it is early', () => {
+            const track = [{deltaTime: 0, absoluteTime: 4}];
+            setQuantization(5, track);
+            expect(track[0].quantizedTime).to.equal(5)
+            expect(track[0].quantizedDelta).to.equal(1)
+        });
+
+        it('should move a note onto the beat if it is late', () => {
+            const track = [{deltaTime: 0, absoluteTime: 6}];
+            setQuantization(5, track);
+            expect(track[0].quantizedTime).to.equal(5)
+            expect(track[0].quantizedDelta).to.equal(-1)
+        });
+
+        xit("should handle this", () => {
+            const track = [{
+                deltaTime: 0,
+                channel: 0,
+                type: 'noteOn',
+                noteNumber: 72,
+                velocity: 80
+            }, {
+                deltaTime: 1823,
+                running: true,
+                channel: 0,
+                type: 'noteOff',
+                noteNumber: 72,
+                velocity: 0
+            }]
+            setAbsoluteTicks(track);
+            setQuantization(480, track);
         });
     });
 });

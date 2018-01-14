@@ -32,7 +32,27 @@ function trackToString (track) {
     return `[${track.name} ${eventString}]`;
 }
 
+// Sets the absoluteTime in ticks on each event of the given track.
+function setAbsoluteTicks (track) {
+    track.forEach((event, i) => {
+        const previousTime = track[i-1] ? track[i-1].absoluteTime : 0;
+        event.absoluteTime = event.deltaTime + previousTime;
+    });
+}
+
+// Sets the quantizedTime and quantizedDelta in ticks (multiple of the level) on each event in the track.
+// The track must have absoluteTime property.
+function setQuantization (level, track) {
+    track.forEach((event, i) => {
+        const rem = event.absoluteTime % level;
+        event.quantizedTime = rem > level / 2 ? event.absoluteTime + level - rem :  event.absoluteTime - rem;
+        event.quantizedDelta = event.quantizedTime - event.absoluteTime;
+    });
+}
+
 module.exports = {
     ticksToDuration,
-    trackToString
+    trackToString,
+    setAbsoluteTicks,
+    setQuantization
 };
