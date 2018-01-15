@@ -14,16 +14,18 @@ program
 // const file = fs.readFileSync('./midi/invent/invent4.mid');
 // const file = fs.readFileSync('./midi/Notes_and_Rests.mid');
 
+const outdir = program.outdir || './';
+
 if (program.file) {
     const file = fs.readFileSync(program.file);
+    const {name} = path.parse(program.file);
 
     const midi = parseMidi(file);
     const output = scribe.midiToBth(midi);
 
-    fs.writeFileSync('./bth/output.bth', output);
+    fs.writeFileSync(path.join(outdir, name + '.bth'), output);
 } else if (program.indir) {
     const dir = fs.readdirSync(program.indir);
-    const outdir = program.outdir || './';
     dir.forEach(file => {
         const fullpath = path.join(program.indir, file);
         if (fs.lstatSync(fullpath).isFile() && path.parse(file).ext === '.mid') {
@@ -32,7 +34,6 @@ if (program.file) {
             const parsed = parseMidi(midi);
             const output = scribe.midiToBth(parsed);
 
-            // fs.writeFileSync('./bth/output.bth', output);
             fs.writeFileSync(path.join(outdir, path.parse(file).name + '.bth'), output);
         }
     });
