@@ -1,5 +1,6 @@
 const teoria = require('teoria');
-const {ticksToDuration, trackToString, setAbsoluteTicks, setQuantization} = require('./utils');
+const {ticksToDuration, setAbsoluteTicks, setQuantization} = require('./time');
+const {trackToString} = require('./string');
 
 function midiToBth (midi) {
     // Stop execution if midi is wrong format.

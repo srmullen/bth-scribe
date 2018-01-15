@@ -18,20 +18,6 @@ function ticksToDuration (ticksPerBeat, deltaTime) {
     return {value: beatPercentage * 4, dots: 0};
 }
 
-function dotString (n) {
-    if (!n) return '';
-    if (n === 1) return '.';
-    if (n === 2) return '.';
-}
-
-function trackToString (track) {
-    const eventString = track.events.reduce((str, event, i) => {
-        return str.concat(event.scientific() +
-        `/${event.duration.value}${dotString(event.duration.dots)}${(i+1) % 16 === 0 ? '\n' : ''} `);
-    }, '');
-    return `[${track.name} ${eventString}]`;
-}
-
 // Sets the absoluteTime in ticks on each event of the given track.
 function setAbsoluteTicks (track) {
     track.forEach((event, i) => {
@@ -52,7 +38,6 @@ function setQuantization (level, track) {
 
 module.exports = {
     ticksToDuration,
-    trackToString,
     setAbsoluteTicks,
     setQuantization
 };

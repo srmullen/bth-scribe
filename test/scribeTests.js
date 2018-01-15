@@ -1,7 +1,7 @@
 const {expect} = require('chai');
 const teoria = require('teoria');
 const {createTrack} = require('../src/scribe');
-const {setAbsoluteTicks} = require('../src/utils');
+const {setAbsoluteTicks} = require('../src/time');
 
 describe('Scribe', () => {
     describe('createTrack', () => {
