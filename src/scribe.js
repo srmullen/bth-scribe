@@ -16,7 +16,7 @@ function midiToBth (midi) {
     for (let i = 0; i < midi.header.numTracks; i++) {
         setAbsoluteTicks(midi.tracks[i]);
         setQuantization(QUANTIZATION, midi.tracks[i]);
-        tracks.push(createTrack(`track${i}`, midi.tracks[i]));
+        tracks.push(createTrack(midi.header.ticksPerBeat, `track${i}`, midi.tracks[i]));
     }
 
     const output = tracks.reduce((str, track) => {
@@ -24,25 +24,31 @@ function midiToBth (midi) {
     }, '');
 
     return output;
+}
 
-    function createTrack (name, events) {
-        const notes = events.reduce((acc, event, i) => {
-            if (event.type === 'noteOn') {
-                acc.currentEvent = event;
-            } else if (event.type === 'noteOff') {
-                const note = teoria.note.fromMIDI(event.noteNumber);
-                note.duration = ticksToDuration(midi.header.ticksPerBeat, event.deltaTime);
-                // const ticks = event.quantizedTime - acc.currentEvent.quantizedTime;
-                // console.log(event.quantizedTime, ticks);
-                // note.duration = ticksToDuration(midi.header.ticksPerBeat, ticks);
-                acc.events = acc.events.concat(note);
+function createTrack (ticksPerBeat, name, events) {
+    const track = events.reduce((acc, event, i) => {
+        if (event.type === 'noteOn') {
+            if (acc.previousEvent.absoluteTime !== event.absoluteTime) {
+                // need to add rest.
+                const deltaTime = event.absoluteTime - acc.previousEvent.absoluteTime;
+                acc.events = acc.events.concat({type: 'rest', duration: ticksToDuration(ticksPerBeat, deltaTime)});
             }
-            return acc;
-        }, {events: [], currentNote: null, name});
-        return notes;
-    }
+        } else if (event.type === 'noteOff') {
+            const note = teoria.note.fromMIDI(event.noteNumber);
+            note.duration = ticksToDuration(ticksPerBeat, event.deltaTime);
+            // const ticks = event.quantizedTime - acc.currentEvent.quantizedTime;
+            // console.log(event.quantizedTime, ticks);
+            // note.duration = ticksToDuration(midi.header.ticksPerBeat, ticks);
+            acc.events = acc.events.concat(note);
+        }
+        acc.previousEvent = event;
+        return acc;
+    }, {events: [], currentTime: 0, previousEvent: {type: 'beginTrackCreate', absoluteTime: 0}, name});
+    return track;
 }
 
 module.exports = {
-    midiToBth
+    midiToBth,
+    createTrack
 }
