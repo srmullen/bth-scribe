@@ -9,6 +9,10 @@ describe('string', () => {
             expect(eventToString({type: 'rest', duration: {value: 16, dots: 1}})).to.equal('r/16.');
             expect(eventToString({type: 'rest', duration: {value: 1, dots: 2}})).to.equal('r/1..');
         });
+
+        it('should convert chord events', () => {
+            expect(1).to.equal(2);
+        });
     });
 
     describe('trackToString', () => {

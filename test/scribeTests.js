@@ -24,6 +24,17 @@ describe('Scribe', () => {
             expect(track.events[2].duration).to.eql({value: 16, dots: 0});
         });
 
-        xit('should group notes into chords');
+        it('should group notes into chords', () => {
+            const events = [
+                {type: 'noteOn', noteNumber: 72, deltaTime: 0},
+                {type: 'noteOn', noteNumber: 74, deltaTime: 0},
+                {type: 'noteOff', noteNumber: 72, deltaTime: 240},
+                {type: 'noteOff', noteNumber: 74, deltaTime: 240} // eight note
+            ];
+            setAbsoluteTicks(events);
+            const track = createTrack(240, 'testtrack', events);
+            expect(track.events.length).to.equal(1);
+            expect(track.events[0].type).to.equal('chord');
+        });
     });
 });

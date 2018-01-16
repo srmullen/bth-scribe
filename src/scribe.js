@@ -34,6 +34,13 @@ function createTrack (ticksPerBeat, name, events) {
                 // need to add rest.
                 const deltaTime = event.absoluteTime - acc.previousEvent.absoluteTime;
                 acc.events = acc.events.concat({type: 'rest', duration: ticksToDuration(ticksPerBeat, deltaTime)});
+            } else if (acc.previousEvent.type === 'noteOn') {
+                if (acc.chord) {
+                    acc.chord.events.push(event);
+                } else {
+                    const chord = {type: 'chord', events: [acc.previousEvent, event], notes: []};
+                    acc.chord = chord;
+                }
             }
         } else if (event.type === 'noteOff') {
             const note = teoria.note.fromMIDI(event.noteNumber);
@@ -41,11 +48,23 @@ function createTrack (ticksPerBeat, name, events) {
             // const ticks = event.quantizedTime - acc.currentEvent.quantizedTime;
             // console.log(event.quantizedTime, ticks);
             // note.duration = ticksToDuration(midi.header.ticksPerBeat, ticks);
-            acc.events = acc.events.concat(note);
+            if (acc.chord) {
+                acc.chord.notes.push(note);
+                if (acc.chord.events.length === acc.chord.notes.length) {
+                    acc.events = acc.events.concat(acc.chord);
+                    acc.chord = null;
+                }
+            } else {
+                acc.events = acc.events.concat(note);
+            }
         }
         acc.previousEvent = event;
         return acc;
-    }, {events: [], currentTime: 0, previousEvent: {type: 'beginTrackCreate', absoluteTime: 0}, name});
+    }, {
+        events: [],
+        previousEvent: {type: 'beginTrackCreate', absoluteTime: 0},
+        chord: null,
+        name});
     return track;
 }
 
