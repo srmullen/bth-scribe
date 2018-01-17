@@ -1,3 +1,5 @@
+const {NOTE, REST, CHORD} = require('./constants');
+
 function dotString (n) {
     if (!n) return '';
     if (n === 1) return '.';
@@ -9,9 +11,9 @@ function note (key, event) {
 }
 
 function event (evnt) {
-    if (evnt.type === 'rest') {
+    if (evnt.type === REST) {
         return `r/${evnt.duration.value}${dotString(evnt.duration.dots)}`;
-    } else if (evnt.type === 'chord') {
+    } else if (evnt.type === CHORD) {
         const notes = evnt.notes.reduce((acc, note, i) => {
             return acc + note.scientific() + ' ';
         }, '');
