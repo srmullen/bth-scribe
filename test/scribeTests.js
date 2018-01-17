@@ -1,6 +1,6 @@
 const {expect} = require('chai');
 const teoria = require('teoria');
-const {createTrack} = require('../src/scribe');
+const {createTrack, midiToLayout} = require('../src/scribe');
 const {setAbsoluteTicks} = require('../src/time');
 
 describe('Scribe', () => {
@@ -35,6 +35,37 @@ describe('Scribe', () => {
             const track = createTrack(240, 'testtrack', events);
             expect(track.events.length).to.equal(1);
             expect(track.events[0].type).to.equal('chord');
+        });
+    });
+
+    describe('midiToLayout', () => {
+        const midi = {
+            tracks: [
+                [{type: 'timeSignature', numerator: 5, denominator: 8}],
+                [{type: 'noteOn', value: 69}, {type: 'noteOff', value: 69}],
+                [{type: 'noteOn', value: 72}, {type: 'noteOff', value: 72}]
+            ]
+        };
+        it('should set name, title, and composer if passed as options', () => {
+            const layout = midiToLayout(midi, {name: 'My Layout', title: 'Awesome song!', composer: 'Sean'});
+            expect(layout.name).to.equal('My Layout');
+            expect(layout.title).to.equal('Awesome song!');
+            expect(layout.composer).to.equal('Sean');
+        });
+
+        it('should create the timeSignature from midi event', () => {
+            const layout = midiToLayout(midi);
+            expect(layout.timeSignatures[0]).to.eql({value: [5, 8], measure: 0, beat: 0});
+        });
+
+        it('should use numerator and denominator options over midi event', () => {
+            const layout = midiToLayout(midi, {numerator: 6, denominator: 4});
+            expect(layout.timeSignatures[0]).to.eql({value: [6, 4], measure: 0, beat: 0});
+        });
+
+        it('should create a line for each track with a noteOn event', () => {
+            const layout = midiToLayout(midi);
+            expect(layout.lines.length).to.equal(2);
         });
     });
 });

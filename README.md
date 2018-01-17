@@ -11,7 +11,8 @@ TODO
 - Event grouping options.
 - Detect trills
 - Strip out notes that are too fast.
-- Create layout files as well.
+- Create layout system/page elements.
+- Dynamically determine clefs for tracks.
 - Create webpage for testing and documentation.
 - Break and tie notes over bars.
 

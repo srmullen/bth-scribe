@@ -22,8 +22,10 @@ if (program.file) {
 
     const midi = parseMidi(file);
     const output = scribe.midiToBth(midi);
+    const layout = scribe.midiToLayout(midi);
 
     fs.writeFileSync(path.join(outdir, name + '.bth'), output);
+    fs.writeFileSync(path.join(outdir, name + '-layout.bth'), JSON.stringify(layout, null, '\t'));
 } else if (program.indir) {
     const dir = fs.readdirSync(program.indir);
     dir.forEach(file => {

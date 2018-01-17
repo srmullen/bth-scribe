@@ -1,7 +1,8 @@
 const teoria = require('teoria');
 const {ticksToDuration, setAbsoluteTicks, setQuantization} = require('./time');
 const stringify = require('./stringify');
-const {NOTE_ON, NOTE_OFF, CHORD, REST}= require('./constants');
+const {getKey} = require('./utils');
+const {NOTE_ON, NOTE_OFF, CHORD, REST, NOTES, MAJOR}= require('./constants');
 
 function midiToBth (midi) {
     // Stop execution if midi is wrong format.
@@ -10,8 +11,6 @@ function midiToBth (midi) {
     const timeSignature = midi.tracks[0].find(e => e.type === 'timeSignature');
     const keySignatureEvent = midi.tracks[0].find(e => e.type === 'keySignature');
     const key = []
-    console.log(keySignatureEvent);
-
 
     // sixtyfourth note quantization.
     const QUANTIZATION = midi.header.ticksPerBeat / 16;
@@ -81,7 +80,73 @@ function createTrack (ticksPerBeat, name, events) {
     return track;
 }
 
+// Given a parsed midi file, returns a json layout.
+function midiToLayout (midi, options = {}) {
+    const timeSignature = midi.tracks[0].find(e => e.type === 'timeSignature');
+    const keySignatureEvent = midi.tracks[0].find(e => e.type === 'keySignature');
+    let key, scale;
+    if (keySignatureEvent) {
+        [key, scale] = getKey(keySignatureEvent.key, keySignatureEvent.scale);
+    } else {
+        key = NOTES.C,
+        scale = MAJOR
+    }
+    const timeSignatures = [];
+    if (timeSignature) timeSignatures.push({
+        value: [
+            options.numerator || timeSignature.numerator,
+            options.denominator || timeSignature.denominator
+        ],
+        measure: 0,
+        beat: 0
+    });
+    // Find tracks with noteOn events. They require lines.
+    const lineTracks = midi.tracks.filter(track => track.some(event => event.type === 'noteOn'));
+    // TODO: Choose clef based on range of notes in track.
+    const lines = lineTracks.map((track) => {
+        return {
+            "name": "",
+            "clefs": [{
+                "value": "treble",
+                "measure": 0,
+                "beat": 0
+            }],
+            "keys": [{
+                "root": key,
+                "mode": scale,
+                "measure": 0,
+                "beat": 0
+            }],
+            "voices": ["track1"]
+        };
+    });
+    return {
+        "name": options.name || '',
+        "title": options.title || '',
+        "composer": options.composer || '',
+        "type": "score",
+        timeSignatures,
+        "currentPage": 0,
+        "pages": [
+            {
+                "systems": 4,
+                "staffSpacing": []
+            }
+        ],
+        lines,
+        // Need to calculate # of measures to determine # of systems needed.
+        "systems": [
+            {
+                "measures": 4,
+                "lineSpacing": [],
+                "length": 1200
+            }
+        ]
+    };
+}
+
 module.exports = {
     midiToBth,
+    midiToLayout,
     createTrack
 }
