@@ -59,7 +59,6 @@ function createTrack (ticksPerBeat, name, events) {
                     if (!acc.chord.duration) {
                         acc.chord.duration = acc.chord.notes[0].duration;
                     }
-                    // acc.chord.duration = ticksToDuration(ticksPerBeat, acc.chord.events[0].deltaTime);
                     acc.events = acc.events.concat(acc.chord);
                     acc.chord = null;
                 }

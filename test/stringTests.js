@@ -1,10 +1,29 @@
 const {expect} = require('chai');
 const teoria = require('teoria');
 const stringify = require('../src/stringify');
+const {NOTES} = require('../src/constants');
 
 describe('string', () => {
     describe('note to string', () => {
-
+        it('should handle accidentals based on key', () => {
+            expect(stringify.note(teoria.note.fromMIDI(41))).to.equal('F2');
+            expect(stringify.note(teoria.note.fromMIDI(53), NOTES.CS)).to.equal('E#3');
+            expect(stringify.note(teoria.note.fromMIDI(90), NOTES.Db)).to.equal('Gb6');
+            expect(stringify.note(teoria.note.fromMIDI(82), NOTES.D)).to.equal('A#5');
+            expect(stringify.note(teoria.note.fromMIDI(67), NOTES.DS)).to.equal('Fx4');
+            expect(stringify.note(teoria.note.fromMIDI(104), NOTES.Eb)).to.equal('Ab7');
+            expect(stringify.note(teoria.note.fromMIDI(104), NOTES.E)).to.equal('G#7');
+            expect(stringify.note(teoria.note.fromMIDI(34), NOTES.F)).to.equal('Bb1');
+            expect(stringify.note(teoria.note.fromMIDI(49), NOTES.FS)).to.equal('C#3');
+            expect(stringify.note(teoria.note.fromMIDI(49), NOTES.Gb)).to.equal('Db3');
+            expect(stringify.note(teoria.note.fromMIDI(66), NOTES.G)).to.equal('F#4');
+            expect(stringify.note(teoria.note.fromMIDI(67), NOTES.GS)).to.equal('Fx4');
+            expect(stringify.note(teoria.note.fromMIDI(75), NOTES.Ab)).to.equal('Eb5');
+            expect(stringify.note(teoria.note.fromMIDI(56), NOTES.A)).to.equal('G#3');
+            expect(stringify.note(teoria.note.fromMIDI(46), NOTES.AS)).to.equal('A#2');
+            expect(stringify.note(teoria.note.fromMIDI(46), NOTES.Bb)).to.equal('Bb2');
+            expect(stringify.note(teoria.note.fromMIDI(76), NOTES.B)).to.equal('E5');
+        });
     });
 
     describe('event to string', () => {

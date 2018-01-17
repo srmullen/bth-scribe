@@ -1,4 +1,5 @@
-const {NOTE, REST, CHORD} = require('./constants');
+const teoria = require('teoria');
+const {NOTE, REST, CHORD, NOTES, MAJOR} = require('./constants');
 
 function dotString (n) {
     if (!n) return '';
@@ -6,32 +7,39 @@ function dotString (n) {
     if (n === 2) return '..';
 }
 
-function note (key, event) {
-
-}
-
-function event (evnt) {
-    if (evnt.type === REST) {
-        return `r/${evnt.duration.value}${dotString(evnt.duration.dots)}`;
-    } else if (evnt.type === CHORD) {
-        const notes = evnt.notes.reduce((acc, note, i) => {
-            return acc + note.scientific() + ' ';
-        }, '');
-        return `<${notes.slice(0, notes.length - 1)}>/${evnt.duration.value}${dotString(evnt.duration.dots)}`;
+function noteToString (note, key=NOTES.C, scale=MAJOR) {
+    const enharmonics = [note, ...note.enharmonics()];
+    const keyScale = teoria.note(key).scale(scale);
+    const enharmonic = enharmonics.find(n => n.scaleDegree(keyScale) > 0);
+    if (!enharmonic) {
+        return note.scientific();
     } else {
-        return `${evnt.scientific()}/${evnt.duration.value}${dotString(evnt.duration.dots)}`;
+        return enharmonic.scientific();
     }
 }
 
-function track (track) {
-    const eventString = track.events.reduce((str, evnt, i) => {
-        return str.concat(event(evnt) + `${(i+1) % 16 === 0 ? '\n' : ''} `);
+function eventToString (event) {
+    if (event.type === REST) {
+        return `r/${event.duration.value}${dotString(event.duration.dots)}`;
+    } else if (event.type === CHORD) {
+        const notes = event.notes.reduce((acc, note, i) => {
+            return acc + note.scientific() + ' ';
+        }, '');
+        return `<${notes.slice(0, notes.length - 1)}>/${event.duration.value}${dotString(event.duration.dots)}`;
+    } else {
+        return `${noteToString(event)}/${event.duration.value}${dotString(event.duration.dots)}`;
+    }
+}
+
+function trackToString (track) {
+    const eventString = track.events.reduce((str, event, i) => {
+        return str.concat(eventToString(event) + `${(i+1) % 16 === 0 ? '\n' : ''} `);
     }, '');
     return `[${track.name} ${eventString}]`;
 }
 
 module.exports = {
-    note,
-    event,
-    track
+    note: noteToString,
+    event: eventToString,
+    track: trackToString
 }
