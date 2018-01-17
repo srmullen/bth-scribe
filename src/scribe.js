@@ -1,6 +1,6 @@
 const teoria = require('teoria');
 const {ticksToDuration, setAbsoluteTicks, setQuantization} = require('./time');
-const {trackToString} = require('./string');
+const stringify = require('./stringify');
 
 function midiToBth (midi) {
     // Stop execution if midi is wrong format.
@@ -21,7 +21,7 @@ function midiToBth (midi) {
     }
 
     const output = tracks.reduce((str, track) => {
-        return str + trackToString(track) + '\n\n';
+        return str + stringify.track(track) + '\n\n';
     }, '');
 
     return output;
