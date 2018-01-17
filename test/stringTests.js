@@ -11,7 +11,11 @@ describe('string', () => {
         });
 
         it('should convert chord events', () => {
-            expect(1).to.equal(2);
+            expect(eventToString({
+                type: 'chord',
+                notes: ['c3', 'e3', 'g#4'].map(teoria.note),
+                duration: {value: 4, dots: 0}
+            })).to.equal('<C3 E3 G#4>/4');
         });
     });
 

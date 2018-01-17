@@ -7,6 +7,11 @@ function dotString (n) {
 function eventToString (event) {
     if (event.type === 'rest') {
         return `r/${event.duration.value}${dotString(event.duration.dots)}`;
+    } else if (event.type === 'chord') {
+        const notes = event.notes.reduce((acc, note, i) => {
+            return acc + note.scientific() + ' ';
+        }, '');
+        return `<${notes.slice(0, notes.length - 1)}>/${event.duration.value}${dotString(event.duration.dots)}`;
     } else {
         return `${event.scientific()}/${event.duration.value}${dotString(event.duration.dots)}`;
     }
