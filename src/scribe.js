@@ -8,6 +8,11 @@ function midiToBth (midi) {
     if (midi.header.format !== 1) throw new Error("Incorrect midi format. Only format 1 supported");
 
     const timeSignature = midi.tracks[0].find(e => e.type === 'timeSignature');
+    const keySignatureEvent = midi.tracks[0].find(e => e.type === 'keySignature');
+    const key = []
+    console.log(keySignatureEvent);
+
+
     // sixtyfourth note quantization.
     const QUANTIZATION = midi.header.ticksPerBeat / 16;
 

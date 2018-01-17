@@ -12,7 +12,7 @@ const NOTES = {
     Db: 'Db',
     D: 'D',
     DS: 'D#',
-    Eb: 'Db',
+    Eb: 'Eb',
     E: 'E',
     F: 'F',
     FS: 'F#',
