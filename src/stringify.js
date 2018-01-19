@@ -7,6 +7,10 @@ function dotString (n) {
     if (n === 2) return '..';
 }
 
+function durationToString (duration) {
+    return `${duration.value}${dotString(duration.dots)}`;
+}
+
 function noteToString (note, key=NOTES.C, scale=MAJOR) {
     const enharmonics = [note, ...note.enharmonics()];
     const keyScale = teoria.note(key).scale(scale);
@@ -20,15 +24,23 @@ function noteToString (note, key=NOTES.C, scale=MAJOR) {
 
 function eventToString (event, options) {
     if (event.type === REST) {
-        return `r/${event.duration.value}${dotString(event.duration.dots)}`;
-    } else if (event.type === CHORD) {
-        const notes = event.notes.reduce((acc, note, i) => {
-            // return acc + note.scientific() + ' ';
-            return acc + noteToString(note, options.key, options.scale) + ' ';
+        const rests = event.duration.reduce((acc, duration) => {
+            return acc + 'r/' + durationToString(duration) + ' ';
         }, '');
-        return `<${notes.slice(0, notes.length - 1)}>/${event.duration.value}${dotString(event.duration.dots)}`;
+        return rests.slice(0, rests.length-1);
+    } else if (event.type === CHORD) {
+        const chords = event.duration.reduce((acc, duration) => {
+            const notes = event.notes.reduce((acc, note, i) => {
+                return acc + noteToString(note, options.key, options.scale) + ' ';
+            }, '');
+            return acc + `<${notes.slice(0, notes.length - 1)}>/${durationToString(duration)}` + '';
+        }, '');
+        return chords;
     } else {
-        return `${noteToString(event, options.key, options.scale)}/${event.duration.value}${dotString(event.duration.dots)}`;
+        const notes = event.duration.reduce((acc, duration) => {
+            return acc + `${noteToString(event, options.key, options.scale)}/${durationToString(duration)}`;
+        }, '');
+        return notes;
     }
 }
 
@@ -40,6 +52,7 @@ function trackToString (track, options = {}) {
 }
 
 module.exports = {
+    duration: durationToString,
     note: noteToString,
     event: eventToString,
     track: trackToString

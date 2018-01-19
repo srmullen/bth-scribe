@@ -2,20 +2,34 @@ const DURATION_VALUES = [1, 2, 4, 8, 16, 32, 64, 128];
 // Convert number of ticks to the beat value.
 // Returns a duration object.
 function ticksToDuration (ticksPerBeat, deltaTime) {
-    const beatPercentage = ticksPerBeat / deltaTime;
-    if (Math.floor(beatPercentage * 4) !== beatPercentage * 4) {
+    const beatPercentage = (ticksPerBeat / deltaTime) * 4;
+    if (Math.floor(beatPercentage) !== beatPercentage) {
         // Check if it is a single-dotted durtation
         let reduced = ticksPerBeat / (deltaTime / 1.5) * 4;
         if (DURATION_VALUES.indexOf(reduced) > -1) {
-            return {value: reduced, dots: 1};
+            return [{value: reduced, dots: 1}];
         }
         // Check if it is a double-dotted value
         reduced = ticksPerBeat / (deltaTime / 1.75) * 4;
         if (DURATION_VALUES.indexOf(reduced) > -1) {
-            return {value: reduced, dots: 2};
+            return [{value: reduced, dots: 2}];
+        }
+
+        // Check for tied values.
+        if ((beatPercentage) < 1) {
+            console.log('longer than whole note');
+        }
+
+        if (beatPercentage < 2) {
+            const halfNoteTicks = ticksPerBeat * 2;
+            const remaining = deltaTime - halfNoteTicks;
+            reduced = (ticksPerBeat / remaining) * 4;
+            if (Math.floor(reduced) === reduced) {
+                return [{value: 2, dots: 0}, ...ticksToDuration(ticksPerBeat, remaining)];
+            }
         }
     }
-    return {value: beatPercentage * 4, dots: 0};
+    return [{value: beatPercentage, dots: 0}];
 }
 
 // Sets the absoluteTime in ticks on each event of the given track.

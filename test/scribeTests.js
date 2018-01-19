@@ -18,10 +18,10 @@ describe('Scribe', () => {
             const track = createTrack(240, events, {name: 'testtrack'});
             expect(track.events.length).to.equal(4);
             expect(track.events[0].type).to.equal('rest');
-            expect(track.events[0].duration).to.eql({value: 4, dots: 0});
+            expect(track.events[0].duration).to.eql([{value: 4, dots: 0}]);
             expect(track.events[1]).instanceof(teoria.Note);
             expect(track.events[2].type).to.equal('rest');
-            expect(track.events[2].duration).to.eql({value: 16, dots: 0});
+            expect(track.events[2].duration).to.eql([{value: 16, dots: 0}]);
         });
 
         it('should group notes into chords', () => {
