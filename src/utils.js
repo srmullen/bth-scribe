@@ -16,6 +16,19 @@ function getKey (keyNum, scaleNum) {
     return [key, scale];
 }
 
+function getKeyScale (midi, options) {
+    const keySignatureEvent = midi.tracks[0].find(e => e.type === 'keySignature');
+    let key, scale;
+    if (keySignatureEvent) {
+        [key, scale] = getKey(keySignatureEvent.key, keySignatureEvent.scale);
+    } else {
+        key = options.key || NOTES.C;
+        scale = options.scale || MAJOR;
+    }
+    return [key, scale];
+}
+
 module.exports = {
-    getKey
+    getKey,
+    getKeyScale
 }

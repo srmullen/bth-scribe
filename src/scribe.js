@@ -4,13 +4,13 @@ const stringify = require('./stringify');
 const {getKey} = require('./utils');
 const {NOTE_ON, NOTE_OFF, CHORD, REST, NOTES, MAJOR}= require('./constants');
 
-function midiToBth (midi) {
+function midiToBth (midi, options = {}) {
     // Stop execution if midi is wrong format.
     if (midi.header.format !== 1) throw new Error("Incorrect midi format. Only format 1 supported");
 
     const timeSignature = midi.tracks[0].find(e => e.type === 'timeSignature');
-    const keySignatureEvent = midi.tracks[0].find(e => e.type === 'keySignature');
-    const key = []
+    // const keySignatureEvent = midi.tracks[0].find(e => e.type === 'keySignature');
+    // const key = []
 
     // sixtyfourth note quantization.
     const QUANTIZATION = midi.header.ticksPerBeat / 16;
@@ -83,14 +83,6 @@ function createTrack (ticksPerBeat, name, events) {
 // Given a parsed midi file, returns a json layout.
 function midiToLayout (midi, options = {}) {
     const timeSignature = midi.tracks[0].find(e => e.type === 'timeSignature');
-    const keySignatureEvent = midi.tracks[0].find(e => e.type === 'keySignature');
-    let key, scale;
-    if (keySignatureEvent) {
-        [key, scale] = getKey(keySignatureEvent.key, keySignatureEvent.scale);
-    } else {
-        key = NOTES.C,
-        scale = MAJOR
-    }
     const timeSignatures = [];
     if (timeSignature) timeSignatures.push({
         value: [
@@ -112,8 +104,8 @@ function midiToLayout (midi, options = {}) {
                 "beat": 0
             }],
             "keys": [{
-                "root": key,
-                "mode": scale,
+                "root": options.key,
+                "mode": options.scale,
                 "measure": 0,
                 "beat": 0
             }],
