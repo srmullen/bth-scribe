@@ -22,15 +22,15 @@ if (program.file) {
     const {name} = path.parse(program.file);
     const midi = parseMidi(file);
     const [key, scale] = getKeyScale(midi, program);
-    
+
     const options = {
         key,
         scale
     };
     const output = scribe.midiToBth(midi, options);
     fs.writeFileSync(path.join(outdir, name + '.bth'), output);
-
-    if (program.createLayout) {
+    
+    if (program.createlayout) {
         const layout = scribe.midiToLayout(midi, options);
         fs.writeFileSync(path.join(outdir, name + '-layout.bth'), JSON.stringify(layout, null, '\t'));
     }

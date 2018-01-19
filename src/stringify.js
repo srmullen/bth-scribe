@@ -18,22 +18,23 @@ function noteToString (note, key=NOTES.C, scale=MAJOR) {
     }
 }
 
-function eventToString (event) {
+function eventToString (event, options) {
     if (event.type === REST) {
         return `r/${event.duration.value}${dotString(event.duration.dots)}`;
     } else if (event.type === CHORD) {
         const notes = event.notes.reduce((acc, note, i) => {
-            return acc + note.scientific() + ' ';
+            // return acc + note.scientific() + ' ';
+            return acc + noteToString(note, options.key, options.scale) + ' ';
         }, '');
         return `<${notes.slice(0, notes.length - 1)}>/${event.duration.value}${dotString(event.duration.dots)}`;
     } else {
-        return `${noteToString(event)}/${event.duration.value}${dotString(event.duration.dots)}`;
+        return `${noteToString(event, options.key, options.scale)}/${event.duration.value}${dotString(event.duration.dots)}`;
     }
 }
 
-function trackToString (track) {
+function trackToString (track, options = {}) {
     const eventString = track.events.reduce((str, event, i) => {
-        return str.concat(eventToString(event) + `${(i+1) % 16 === 0 ? '\n' : ''} `);
+        return str.concat(eventToString(event, options) + `${(i+1) % 16 === 0 ? '\n' : ''} `);
     }, '');
     return `[${track.name} ${eventString}]`;
 }

@@ -1,7 +1,7 @@
 const {expect} = require('chai');
 const teoria = require('teoria');
 const stringify = require('../src/stringify');
-const {NOTES} = require('../src/constants');
+const {NOTES, MAJOR, MINOR} = require('../src/constants');
 
 describe('string', () => {
     describe('note to string', () => {
@@ -24,6 +24,14 @@ describe('string', () => {
             expect(stringify.note(teoria.note.fromMIDI(46), NOTES.Bb)).to.equal('Bb2');
             expect(stringify.note(teoria.note.fromMIDI(76), NOTES.B)).to.equal('E5');
         });
+
+        it('should handle minor keys', () => {
+            expect(stringify.note(teoria.note.fromMIDI(70), NOTES.D, MINOR)).to.equal('Bb4');
+        });
+
+        it('should handle leading tones', () => {
+            expect(stringify.note(teoria.note.fromMIDI(61), NOTES.D, MINOR)).to.equal('C#4');
+        });
     });
 
     describe('event to string', () => {
@@ -38,7 +46,7 @@ describe('string', () => {
                 type: 'chord',
                 notes: ['c3', 'e3', 'g#4'].map(teoria.note),
                 duration: {value: 4, dots: 0}
-            })).to.equal('<C3 E3 G#4>/4');
+            }, {})).to.equal('<C3 E3 G#4>/4');
         });
     });
 

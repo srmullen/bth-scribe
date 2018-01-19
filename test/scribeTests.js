@@ -15,7 +15,7 @@ describe('Scribe', () => {
                 {type: 'noteOff', noteNumber: 74, deltaTime: 420} // eight note
             ];
             setAbsoluteTicks(events);
-            const track = createTrack(240, 'testtrack', events);
+            const track = createTrack(240, events, {name: 'testtrack'});
             expect(track.events.length).to.equal(4);
             expect(track.events[0].type).to.equal('rest');
             expect(track.events[0].duration).to.eql({value: 4, dots: 0});
@@ -32,7 +32,7 @@ describe('Scribe', () => {
                 {type: 'noteOff', noteNumber: 74, deltaTime: 240} // eight note
             ];
             setAbsoluteTicks(events);
-            const track = createTrack(240, 'testtrack', events);
+            const track = createTrack(240, events, {name: 'testtrack'});
             expect(track.events.length).to.equal(1);
             expect(track.events[0].type).to.equal('chord');
         });

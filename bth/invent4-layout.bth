@@ -6,8 +6,8 @@
 	"timeSignatures": [
 		{
 			"value": [
-				4,
-				4
+				3,
+				8
 			],
 			"measure": 0,
 			"beat": 0
@@ -32,7 +32,7 @@
 			],
 			"keys": [
 				{
-					"root": "A",
+					"root": "D",
 					"mode": "minor",
 					"measure": 0,
 					"beat": 0
@@ -53,7 +53,7 @@
 			],
 			"keys": [
 				{
-					"root": "A",
+					"root": "D",
 					"mode": "minor",
 					"measure": 0,
 					"beat": 0

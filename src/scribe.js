@@ -22,17 +22,22 @@ function midiToBth (midi, options = {}) {
     for (let i = 0; i < midi.header.numTracks; i++) {
         setAbsoluteTicks(midi.tracks[i]);
         setQuantization(QUANTIZATION, midi.tracks[i]);
-        tracks.push(createTrack(midi.header.ticksPerBeat, `track${i}`, midi.tracks[i]));
+        const track = createTrack(midi.header.ticksPerBeat, midi.tracks[i], {
+            name: `track${i}`,
+            key: options.key,
+            scale: options.scale
+        });
+        tracks.push(track);
     }
 
     const output = tracks.reduce((str, track) => {
-        return str + stringify.track(track) + '\n\n';
+        return str + stringify.track(track, options) + '\n\n';
     }, '');
 
     return output;
 }
 
-function createTrack (ticksPerBeat, name, events) {
+function createTrack (ticksPerBeat, events, options = {}) {
     const track = events.reduce((acc, event, i) => {
         if (event.type === NOTE_ON) {
             if (acc.previousEvent.absoluteTime !== event.absoluteTime) {
@@ -76,7 +81,7 @@ function createTrack (ticksPerBeat, name, events) {
         events: [],
         previousEvent: {type: 'beginTrackCreate', absoluteTime: 0},
         chord: null,
-        name});
+        name: options.name});
     return track;
 }
 

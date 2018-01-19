@@ -6,7 +6,6 @@ Tool for converting midi files to the bth music notation format.
 
 TODO
 ----
-- Key signature input.
 - command line args. i.e. Rules for output format
 - Event grouping options.
 - Detect trills
@@ -15,6 +14,7 @@ TODO
 - Dynamically determine clefs for tracks.
 - Create webpage for testing and documentation.
 - Break and tie notes over bars.
+- Notate leading tones with correct accidentals.
 
 - When quantizing, long notes may need to be broken into tied notes. e.x.
 ```javascript
