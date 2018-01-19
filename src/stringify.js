@@ -27,18 +27,18 @@ function eventToString (event, options) {
         const rests = event.duration.reduce((acc, duration) => {
             return acc + 'r/' + durationToString(duration) + ' ';
         }, '');
-        return rests.slice(0, rests.length-1);
+        return rests;
     } else if (event.type === CHORD) {
         const chords = event.duration.reduce((acc, duration) => {
             const notes = event.notes.reduce((acc, note, i) => {
                 return acc + noteToString(note, options.key, options.scale) + ' ';
             }, '');
-            return acc + `<${notes.slice(0, notes.length - 1)}>/${durationToString(duration)}` + '';
+            return acc + `<${notes.slice(0, notes.length - 1)}>/${durationToString(duration)}` + ' ';
         }, '');
         return chords;
     } else {
         const notes = event.duration.reduce((acc, duration) => {
-            return acc + `${noteToString(event, options.key, options.scale)}/${durationToString(duration)}`;
+            return acc + `${noteToString(event, options.key, options.scale)}/${durationToString(duration)} `;
         }, '');
         return notes;
     }
@@ -46,7 +46,7 @@ function eventToString (event, options) {
 
 function trackToString (track, options = {}) {
     const eventString = track.events.reduce((str, event, i) => {
-        return str.concat(eventToString(event, options) + `${(i+1) % 16 === 0 ? '\n' : ''} `);
+        return str.concat(eventToString(event, options) + `${(i+1) % 16 === 0 ? '\n' : ''}`);
     }, '');
     return `[${track.name} ${eventString}]`;
 }

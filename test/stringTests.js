@@ -36,9 +36,9 @@ describe('string', () => {
 
     describe('event to string', () => {
         it('should convert rest events', () => {
-            expect(stringify.event({type: 'rest', duration: [{value: 4, dots: 0}]})).to.equal('r/4');
-            expect(stringify.event({type: 'rest', duration: [{value: 16, dots: 1}]})).to.equal('r/16.');
-            expect(stringify.event({type: 'rest', duration: [{value: 1, dots: 2}]})).to.equal('r/1..');
+            expect(stringify.event({type: 'rest', duration: [{value: 4, dots: 0}]}).trim()).to.equal('r/4');
+            expect(stringify.event({type: 'rest', duration: [{value: 16, dots: 1}]}).trim()).to.equal('r/16.');
+            expect(stringify.event({type: 'rest', duration: [{value: 1, dots: 2}]}).trim()).to.equal('r/1..');
         });
 
         it('should convert chord events', () => {
@@ -46,7 +46,7 @@ describe('string', () => {
                 type: 'chord',
                 notes: ['c3', 'e3', 'g#4'].map(teoria.note),
                 duration: [{value: 4, dots: 0}]
-            }, {})).to.equal('<C3 E3 G#4>/4');
+            }, {}).trim()).to.equal('<C3 E3 G#4>/4');
         });
     });
 

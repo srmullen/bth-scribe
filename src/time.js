@@ -17,16 +17,15 @@ function ticksToDuration (ticksPerBeat, deltaTime) {
 
         // Check for tied values.
         if ((beatPercentage) < 1) {
-            console.log('longer than whole note');
+            const wholeNoteTicks = ticksPerBeat * 4;
+            const remaining = deltaTime - wholeNoteTicks;
+            return [{value: 1, dots: 0}, ...ticksToDuration(ticksPerBeat, remaining)];
         }
 
         if (beatPercentage < 2) {
             const halfNoteTicks = ticksPerBeat * 2;
             const remaining = deltaTime - halfNoteTicks;
-            reduced = (ticksPerBeat / remaining) * 4;
-            if (Math.floor(reduced) === reduced) {
-                return [{value: 2, dots: 0}, ...ticksToDuration(ticksPerBeat, remaining)];
-            }
+            return [{value: 2, dots: 0}, ...ticksToDuration(ticksPerBeat, remaining)];
         }
     }
     return [{value: beatPercentage, dots: 0}];

@@ -128,12 +128,21 @@ describe('Tests', () => {
 
         describe('Breaking up ties/rests.', () => {
             it('should handle whole notes.', () => {
-
+                // whole-note + sixteenth-note
+                expect(ticksToDuration(240, 1020)).to.eql([{value: 1, dots: 0}, {value: 16, dots: 0}]);
+                // whole-note + dotted sixteenth
+                expect(ticksToDuration(240, 1050)).to.eql([{value: 1, dots: 0}, {value: 16, dots: 1}]);
+                // whole-note + eighth
+                expect(ticksToDuration(240, 1080)).to.eql([{value: 1, dots: 0}, {value: 8, dots: 0}]);
             });
 
             it('should handle half notes.', () => {
                 // half-note + sixteenth-note
                 expect(ticksToDuration(240, 540)).to.eql([{value: 2, dots: 0}, {value: 16, dots: 0}]);
+                // half-note + dotted sixteenth
+                expect(ticksToDuration(240, 570)).to.eql([{value: 2, dots: 0}, {value: 16, dots: 1}]);
+                // half-note + eighth
+                expect(ticksToDuration(240, 600)).to.eql([{value: 2, dots: 0}, {value: 8, dots: 0}]);
             });
         });
     });
