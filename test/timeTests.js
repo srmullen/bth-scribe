@@ -125,6 +125,11 @@ describe('Tests', () => {
         describe('tuplets', () => {
 
         });
+
+        it('should correctly handle first lh rest of Invention 1', () => {
+            // half-note + sixteenth-note
+            expect(ticksToDuration(240, 540)).to.eql([{value: 2, dots: 0}, {value: 16, dots: 0}]);
+        });
     });
 
     describe('setAbsoluteTicks', () => {

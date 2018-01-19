@@ -9,8 +9,6 @@ function midiToBth (midi, options = {}) {
     if (midi.header.format !== 1) throw new Error("Incorrect midi format. Only format 1 supported");
 
     const timeSignature = midi.tracks[0].find(e => e.type === 'timeSignature');
-    // const keySignatureEvent = midi.tracks[0].find(e => e.type === 'keySignature');
-    // const key = []
 
     // sixtyfourth note quantization.
     const QUANTIZATION = midi.header.ticksPerBeat / 16;
@@ -81,7 +79,8 @@ function createTrack (ticksPerBeat, events, options = {}) {
         events: [],
         previousEvent: {type: 'beginTrackCreate', absoluteTime: 0},
         chord: null,
-        name: options.name});
+        name: options.name
+    });
     return track;
 }
 

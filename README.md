@@ -12,7 +12,6 @@ TODO
 - Strip out notes that are too fast.
 - Create layout system/page elements.
 - Dynamically determine clefs for tracks.
-- Create webpage for testing and documentation.
 - Break and tie notes over bars.
 - Notate leading tones with correct accidentals.
 
