@@ -18,14 +18,17 @@ function midiToBth (midi, options = {}) {
 
     const tracks = [];
     for (let i = 0; i < midi.header.numTracks; i++) {
-        setAbsoluteTicks(midi.tracks[i]);
-        setQuantization(QUANTIZATION, midi.tracks[i]);
-        const track = createTrack(midi.header.ticksPerBeat, midi.tracks[i], {
-            name: `track${i}`,
-            key: options.key,
-            scale: options.scale
-        });
-        tracks.push(track);
+        // Only create a track if it has noteOn events.
+        if (midi.tracks[i].some(event => event.type === 'noteOn')) {
+            setAbsoluteTicks(midi.tracks[i]);
+            setQuantization(QUANTIZATION, midi.tracks[i]);
+            const track = createTrack(midi.header.ticksPerBeat, midi.tracks[i], {
+                name: `track${i}`,
+                key: options.key,
+                scale: options.scale
+            });
+            tracks.push(track);
+        }
     }
 
     const output = tracks.reduce((str, track) => {

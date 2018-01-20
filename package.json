@@ -1,5 +1,8 @@
 {
   "name": "bth-scribe",
+  "bin": {
+    "bth-scribe": "./bin/index.js"
+  },
   "version": "1.0.0",
   "description": "Convert midi files to boethius",
   "main": "index.js",

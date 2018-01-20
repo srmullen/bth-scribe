@@ -1,9 +1,11 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 const path = require('path');
 const program = require('commander')
 const parseMidi = require('midi-file').parseMidi;
-const scribe = require('./scribe');
-const {getKeyScale} = require('./utils');
+const scribe = require('../src/scribe');
+const {getKeyScale} = require('../src/utils');
 
 program
     .version("0.0.1")
@@ -29,7 +31,7 @@ if (program.file) {
     };
     const output = scribe.midiToBth(midi, options);
     fs.writeFileSync(path.join(outdir, name + '.bth'), output);
-    
+
     if (program.createlayout) {
         const layout = scribe.midiToLayout(midi, options);
         fs.writeFileSync(path.join(outdir, name + '-layout.bth'), JSON.stringify(layout, null, '\t'));
