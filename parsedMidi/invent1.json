@@ -1,0 +1,6651 @@
+{
+	"header": {
+		"format": 1,
+		"numTracks": 3,
+		"ticksPerBeat": 240
+	},
+	"tracks": [
+		[
+			{
+				"deltaTime": 0,
+				"meta": true,
+				"type": "timeSignature",
+				"numerator": 4,
+				"denominator": 4,
+				"metronome": 24,
+				"thirtyseconds": 8
+			},
+			{
+				"deltaTime": 0,
+				"meta": true,
+				"type": "setTempo",
+				"microsecondsPerBeat": 697674
+			},
+			{
+				"deltaTime": 0,
+				"meta": true,
+				"type": "endOfTrack"
+			}
+		],
+		[
+			{
+				"deltaTime": 0,
+				"meta": true,
+				"type": "text",
+				"text": "RH"
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 56
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 56
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 56
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 56
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 56
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 420,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 420,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 420,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 420,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 73,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 73,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 73,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 73,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 73,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 73,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 68,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 68,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 240,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 68,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 68,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 66,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 68,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 68,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 80,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 80,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 83,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 83,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 68,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 68,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 530,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 10,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 480,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 530,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 10,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 530,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 10,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 83,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 83,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 84,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 84,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 81,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 83,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 83,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 84,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 84,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 79,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 77,
+				"velocity": 56
+			},
+			{
+				"deltaTime": 30,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 77,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 76,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 74,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 70,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 70,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 70,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 70,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 71,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 960,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 72,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 0,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"meta": true,
+				"type": "endOfTrack"
+			}
+		],
+		[
+			{
+				"deltaTime": 0,
+				"meta": true,
+				"type": "text",
+				"text": "LH"
+			},
+			{
+				"deltaTime": 540,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 53,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 53,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 43,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 43,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 300,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 290,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 10,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 47,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 47,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 47,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 180,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 47,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 38,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 38,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 43,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 43,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 45,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 45,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 47,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 47,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 45,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 45,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 47,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 47,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 43,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 43,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 70,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 70,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 70,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 70,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 69,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 67,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 56,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 56,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 30,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 30,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 54,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 56,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 56,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 45,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 45,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 300,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 61,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 61,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 530,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 10,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 530,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 10,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 59,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 530,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 10,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 58,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 58,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 58,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 58,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 58,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 58,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 53,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 53,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 60,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 58,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 58,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 57,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 65,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 62,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 64,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 53,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 53,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 53,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 53,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 53,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 53,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 50,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 52,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 53,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 60,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 53,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 55,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 43,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 120,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 43,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 36,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOn",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 960,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 48,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"channel": 1,
+				"type": "noteOff",
+				"noteNumber": 36,
+				"velocity": 64
+			},
+			{
+				"deltaTime": 0,
+				"meta": true,
+				"type": "endOfTrack"
+			}
+		]
+	]
+}

@@ -2,7 +2,7 @@ const teoria = require('teoria');
 const {ticksToDuration, setAbsoluteTicks, setQuantization} = require('./time');
 const stringify = require('./stringify');
 const {getKey} = require('./utils');
-const {NOTE_ON, NOTE_OFF, CHORD, REST, NOTES, MAJOR}= require('./constants');
+const {NOTE_ON, NOTE_OFF, NOTE, CHORD, REST, NOTES, MAJOR}= require('./constants');
 
 function midiToBth (midi, options = {}) {
     // Stop execution if midi is wrong format.
@@ -60,7 +60,11 @@ function createTrack (ticksPerBeat, events, options = {}) {
         } else if (event.type === NOTE_OFF) {
             const note = teoria.note.fromMIDI(event.noteNumber);
             note.duration = ticksToDuration(ticksPerBeat, event.quantizedDelta);
-
+            // NOTE: Notes are haveing a duration of Infinity due to quantized delta of 0.
+            // Generally looks to be caused by trills.
+            // if (!isFinite(note.duration[0].value)) {
+            //     console.log(event.quantizedDelta);
+            // }
             if (acc.chord) {
                 acc.chord.notes.push(note);
                 if (acc.chord.events.length === acc.chord.notes.length) {
