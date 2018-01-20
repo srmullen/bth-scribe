@@ -51,9 +51,17 @@ function trackToString (track, options = {}) {
     return `[${track.name} ${eventString}]`;
 }
 
+// @bth - Intermediate boethius representation.
+function bthToString (bth, options = {}) {
+    return bth.reduce((str, track) => {
+        return str + trackToString(track, options) + '\n\n';
+    }, '');
+}
+
 module.exports = {
     duration: durationToString,
     note: noteToString,
     event: eventToString,
-    track: trackToString
+    track: trackToString,
+    bth: bthToString
 }

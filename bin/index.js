@@ -5,6 +5,7 @@ const path = require('path');
 const program = require('commander')
 const parseMidi = require('midi-file').parseMidi;
 const scribe = require('../src/scribe');
+const stringify = require('../src/stringify');
 const {getKeyScale} = require('../src/utils');
 
 program
@@ -29,8 +30,8 @@ if (program.file) {
         key,
         scale
     };
-    const output = scribe.midiToBth(midi, options);
-    fs.writeFileSync(path.join(outdir, name + '.bth'), output);
+    const bth = scribe.midiToBth(midi);
+    fs.writeFileSync(path.join(outdir, name + '.bth'), stringify.bth(bth, options));
 
     if (program.createlayout) {
         const layout = scribe.midiToLayout(midi, options);
