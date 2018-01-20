@@ -38,9 +38,9 @@ function midiToBth (midi, options = {}) {
 function createTrack (ticksPerBeat, events, options = {}) {
     const track = events.reduce((acc, event, i) => {
         if (event.type === NOTE_ON) {
-            if (acc.previousEvent.absoluteTime !== event.absoluteTime) {
+            if (acc.previousEvent.quantizedTime !== event.quantizedTime) {
                 // need to add rest.
-                const deltaTime = event.absoluteTime - acc.previousEvent.absoluteTime;
+                const deltaTime = event.quantizedTime - acc.previousEvent.quantizedTime;
                 acc.events = acc.events.concat({type: REST, duration: ticksToDuration(ticksPerBeat, deltaTime)});
             } else if (acc.previousEvent.type === NOTE_ON) {
                 if (acc.chord) {
@@ -56,10 +56,8 @@ function createTrack (ticksPerBeat, events, options = {}) {
             }
         } else if (event.type === NOTE_OFF) {
             const note = teoria.note.fromMIDI(event.noteNumber);
-            note.duration = ticksToDuration(ticksPerBeat, event.deltaTime);
-            // const ticks = event.quantizedTime - acc.currentEvent.quantizedTime;
-            // console.log(event.quantizedTime, ticks);
-            // note.duration = ticksToDuration(midi.header.ticksPerBeat, ticks);
+            note.duration = ticksToDuration(ticksPerBeat, event.quantizedDelta);
+
             if (acc.chord) {
                 acc.chord.notes.push(note);
                 if (acc.chord.events.length === acc.chord.notes.length) {
@@ -77,12 +75,62 @@ function createTrack (ticksPerBeat, events, options = {}) {
         return acc;
     }, {
         events: [],
-        previousEvent: {type: 'beginTrackCreate', absoluteTime: 0},
+        previousEvent: {type: 'beginTrackCreate', absoluteTime: 0, quantizedTime: 0},
         chord: null,
         name: options.name
     });
     return track;
 }
+
+// function createTrack (ticksPerBeat, events, options = {}) {
+//     const track = events.reduce((acc, event, i) => {
+//         if (event.type === NOTE_ON) {
+//             if (acc.previousEvent.absoluteTime !== event.absoluteTime) {
+//                 // need to add rest.
+//                 const deltaTime = event.absoluteTime - acc.previousEvent.absoluteTime;
+//                 acc.events = acc.events.concat({type: REST, duration: ticksToDuration(ticksPerBeat, deltaTime)});
+//             } else if (acc.previousEvent.type === NOTE_ON) {
+//                 if (acc.chord) {
+//                     acc.chord.events.push(event);
+//                 } else {
+//                     const chord = {
+//                         type: CHORD,
+//                         events: [acc.previousEvent, event],
+//                         notes: []
+//                     };
+//                     acc.chord = chord;
+//                 }
+//             }
+//         } else if (event.type === NOTE_OFF) {
+//             const note = teoria.note.fromMIDI(event.noteNumber);
+//             note.duration = ticksToDuration(ticksPerBeat, event.deltaTime);
+//
+//             // const ticks = event.quantizedTime - acc.currentEvent.quantizedTime;
+//             // console.log(event.quantizedTime, ticks);
+//             // note.duration = ticksToDuration(midi.header.ticksPerBeat, ticks);
+//             if (acc.chord) {
+//                 acc.chord.notes.push(note);
+//                 if (acc.chord.events.length === acc.chord.notes.length) {
+//                     if (!acc.chord.duration) {
+//                         acc.chord.duration = acc.chord.notes[0].duration;
+//                     }
+//                     acc.events = acc.events.concat(acc.chord);
+//                     acc.chord = null;
+//                 }
+//             } else {
+//                 acc.events = acc.events.concat(note);
+//             }
+//         }
+//         acc.previousEvent = event;
+//         return acc;
+//     }, {
+//         events: [],
+//         previousEvent: {type: 'beginTrackCreate', absoluteTime: 0},
+//         chord: null,
+//         name: options.name
+//     });
+//     return track;
+// }
 
 // Given a parsed midi file, returns a json layout.
 function midiToLayout (midi, options = {}) {

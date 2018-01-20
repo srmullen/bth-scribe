@@ -27,6 +27,12 @@ function ticksToDuration (ticksPerBeat, deltaTime) {
             const remaining = deltaTime - halfNoteTicks;
             return [{value: 2, dots: 0}, ...ticksToDuration(ticksPerBeat, remaining)];
         }
+
+        if (beatPercentage < 4) {
+            const noteTypeTicks = ticksPerBeat * 1;
+            const remaining = deltaTime - noteTypeTicks;
+            return [{value: 4, dots: 0}, ...ticksToDuration(ticksPerBeat, remaining)];
+        }
     }
     return [{value: beatPercentage, dots: 0}];
 }
@@ -44,8 +50,9 @@ function setAbsoluteTicks (track) {
 function setQuantization (level, track) {
     track.forEach((event, i) => {
         const rem = event.absoluteTime % level;
-        event.quantizedTime = rem > level / 2 ? event.absoluteTime + level - rem :  event.absoluteTime - rem;
-        event.quantizedDelta = event.quantizedTime - event.absoluteTime;
+        event.quantizedTime = rem > level / 2 ? event.absoluteTime + level - rem : event.absoluteTime - rem;
+        // event.quantizedDelta = event.quantizedTime - event.absoluteTime;
+        event.quantizedDelta = event.deltaTime + (event.quantizedTime - event.absoluteTime);
     });
 }
 

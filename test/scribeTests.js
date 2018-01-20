@@ -1,7 +1,7 @@
 const {expect} = require('chai');
 const teoria = require('teoria');
 const {createTrack, midiToLayout} = require('../src/scribe');
-const {setAbsoluteTicks} = require('../src/time');
+const {setAbsoluteTicks, setQuantization} = require('../src/time');
 
 describe('Scribe', () => {
     describe('createTrack', () => {
@@ -15,6 +15,7 @@ describe('Scribe', () => {
                 {type: 'noteOff', noteNumber: 74, deltaTime: 420} // eight note
             ];
             setAbsoluteTicks(events);
+            setQuantization(60, events);
             const track = createTrack(240, events, {name: 'testtrack'});
             expect(track.events.length).to.equal(4);
             expect(track.events[0].type).to.equal('rest');
@@ -32,6 +33,7 @@ describe('Scribe', () => {
                 {type: 'noteOff', noteNumber: 74, deltaTime: 240} // eight note
             ];
             setAbsoluteTicks(events);
+            setQuantization(30, events);
             const track = createTrack(240, events, {name: 'testtrack'});
             expect(track.events.length).to.equal(1);
             expect(track.events[0].type).to.equal('chord');

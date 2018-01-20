@@ -144,6 +144,15 @@ describe('Tests', () => {
                 // half-note + eighth
                 expect(ticksToDuration(240, 600)).to.eql([{value: 2, dots: 0}, {value: 8, dots: 0}]);
             });
+
+            it('should handle quarter notes.', () => {
+                // half-note + sixteenth-note
+                expect(ticksToDuration(240, 300)).to.eql([{value: 4, dots: 0}, {value: 16, dots: 0}]);
+                // half-note + dotted sixteenth
+                expect(ticksToDuration(240, 330)).to.eql([{value: 4, dots: 0}, {value: 16, dots: 1}]);
+                // half-note + eighth
+                expect(ticksToDuration(240, 360)).to.eql([{value: 4, dots: 1}]);
+            });
         });
     });
 
@@ -176,6 +185,12 @@ describe('Tests', () => {
             setQuantization(5, track);
             expect(track[0].quantizedTime).to.equal(5)
             expect(track[0].quantizedDelta).to.equal(-1)
+        });
+
+        it('should quantize the delta time', () => {
+            const track = [{deltaTime: 12, absoluteTime: 22}];
+            setQuantization(5, track);
+            expect(track[0].quantizedDelta).to.equal(10);
         });
 
         xit("should handle this", () => {
