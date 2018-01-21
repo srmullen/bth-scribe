@@ -49,25 +49,32 @@ describe('Scribe', () => {
             ]
         };
         it('should set name, title, and composer if passed as options', () => {
-            const layout = midiToLayout(midi, {name: 'My Layout', title: 'Awesome song!', composer: 'Sean'});
+            const layout = midiToLayout(midi, [], {name: 'My Layout', title: 'Awesome song!', composer: 'Sean'});
             expect(layout.name).to.equal('My Layout');
             expect(layout.title).to.equal('Awesome song!');
             expect(layout.composer).to.equal('Sean');
         });
 
         it('should create the timeSignature from midi event', () => {
-            const layout = midiToLayout(midi);
+            const layout = midiToLayout(midi, []);
             expect(layout.timeSignatures[0]).to.eql({value: [5, 8], measure: 0, beat: 0});
         });
 
         it('should use numerator and denominator options over midi event', () => {
-            const layout = midiToLayout(midi, {numerator: 6, denominator: 4});
+            const layout = midiToLayout(midi, [], {numerator: 6, denominator: 4});
             expect(layout.timeSignatures[0]).to.eql({value: [6, 4], measure: 0, beat: 0});
         });
 
-        it('should create a line for each track with a noteOn event', () => {
-            const layout = midiToLayout(midi);
+        it('should create a line for each track in bth', () => {
+            const layout = midiToLayout(midi, [{}, {}], {});
             expect(layout.lines.length).to.equal(2);
+        });
+
+        it('should add the correct voices to each line', () => {
+            const bth = [{events: [], name: 'trebleTrack'}, {events: [], name: 'bassTrack'}];
+            const layout = midiToLayout(midi, bth, {});
+            expect(layout.lines[0].voices[0]).to.equal('trebleTrack');
+            expect(layout.lines[1].voices[0]).to.equal('bassTrack');
         });
     });
 });

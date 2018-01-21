@@ -34,7 +34,7 @@ if (program.file) {
     fs.writeFileSync(path.join(outdir, name + '.bth'), stringify.bth(bth, options));
 
     if (program.createlayout) {
-        const layout = scribe.midiToLayout(midi, options);
+        const layout = scribe.midiToLayout(midi, bth, options);
         fs.writeFileSync(path.join(outdir, name + '-layout.bth'), JSON.stringify(layout, null, '\t'));
     }
 } else if (program.indir) {

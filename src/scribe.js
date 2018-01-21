@@ -84,7 +84,7 @@ function createTrack (ticksPerBeat, events, options = {}) {
 }
 
 // Given a parsed midi file, returns a json layout.
-function midiToLayout (midi, options = {}) {
+function midiToLayout (midi, bth, options = {}) {
     const timeSignature = midi.tracks[0].find(e => e.type === 'timeSignature');
     const timeSignatures = [];
     if (timeSignature) timeSignatures.push({
@@ -96,9 +96,9 @@ function midiToLayout (midi, options = {}) {
         beat: 0
     });
     // Find tracks with noteOn events. They require lines.
-    const lineTracks = midi.tracks.filter(track => track.some(event => event.type === 'noteOn'));
+    // const lineTracks = midi.tracks.filter(track => track.some(event => event.type === 'noteOn'));
     // TODO: Choose clef based on range of notes in track.
-    const lines = lineTracks.map((track) => {
+    const lines = bth.map((track) => {
         return {
             "name": "",
             "clefs": [{
@@ -112,7 +112,7 @@ function midiToLayout (midi, options = {}) {
                 "measure": 0,
                 "beat": 0
             }],
-            "voices": ["track1"]
+            "voices": [track.name]
         };
     });
     return {

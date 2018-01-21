@@ -32,8 +32,8 @@
 			],
 			"keys": [
 				{
-					"root": "A",
-					"mode": "minor",
+					"root": "C",
+					"mode": "major",
 					"measure": 0,
 					"beat": 0
 				}
@@ -53,14 +53,14 @@
 			],
 			"keys": [
 				{
-					"root": "A",
-					"mode": "minor",
+					"root": "C",
+					"mode": "major",
 					"measure": 0,
 					"beat": 0
 				}
 			],
 			"voices": [
-				"track1"
+				"track2"
 			]
 		}
 	],
