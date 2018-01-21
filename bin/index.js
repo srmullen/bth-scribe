@@ -34,8 +34,10 @@ if (program.file) {
     fs.writeFileSync(path.join(outdir, name + '.bth'), stringify.bth(bth, options));
 
     if (program.createlayout) {
+        const layoutName = name + '-layout.json';
+        console.log(`Createing Layout: ${layoutName}`);
         const layout = scribe.midiToLayout(midi, bth, options);
-        fs.writeFileSync(path.join(outdir, name + '-layout.bth'), JSON.stringify(layout, null, '\t'));
+        fs.writeFileSync(path.join(outdir, layoutName), JSON.stringify(layout, null, '\t'));
     }
 } else if (program.indir) {
     const dir = fs.readdirSync(program.indir);

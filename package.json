@@ -15,6 +15,7 @@
   "dependencies": {
     "commander": "^2.13.0",
     "fraction.js": "^4.0.4",
+    "lodash": "^4.17.4",
     "midi-file": "^1.0.2",
     "teoria": "^2.5.0"
   },

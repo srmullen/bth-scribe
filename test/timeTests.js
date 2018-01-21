@@ -1,7 +1,7 @@
 const {expect} = require('chai');
 const teoria = require('teoria');
 const {
-    ticksToDuration, setAbsoluteTicks, setQuantization
+    ticksToDuration, setAbsoluteTicks, setQuantization, getMeasuresFromTicks
 } = require('../src/time');
 
 describe('Tests', () => {
@@ -210,6 +210,16 @@ describe('Tests', () => {
             }]
             setAbsoluteTicks(track);
             setQuantization(480, track);
+        });
+    });
+
+    describe('getMeasuresFromTicks', () => {
+        it('should return the number of measures given ticksPerBeat, timeSignature, and durationTicks', () => {
+            expect(getMeasuresFromTicks(240, 480, {numerator: 4, denominator: 4})).to.equal(1);
+            expect(getMeasuresFromTicks(240, 960, {numerator: 4, denominator: 4})).to.equal(1);
+            expect(getMeasuresFromTicks(240, 960 * 5, {numerator: 4, denominator: 4})).to.equal(5);
+            expect(getMeasuresFromTicks(240, 960 * 5, {numerator: 3, denominator: 4})).to.equal(7);
+            expect(getMeasuresFromTicks(240, 960 * 5, {numerator: 3, denominator: 8})).to.equal(14);
         });
     });
 });

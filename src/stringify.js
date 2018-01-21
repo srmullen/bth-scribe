@@ -38,7 +38,7 @@ function eventToString (event, options) {
         return chords;
     } else {
         const notes = event.duration.reduce((acc, duration) => {
-            return acc + `${noteToString(event, options.key, options.scale)}/${durationToString(duration)} `;
+            return acc + `${noteToString(event.note, options.key, options.scale)}/${durationToString(duration)} `;
         }, '');
         return notes;
     }

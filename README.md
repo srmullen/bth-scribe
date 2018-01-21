@@ -10,7 +10,6 @@ TODO
 - Event grouping options.
 - Detect trills
 - Strip out notes that are too fast.
-- Create layout system/page elements.
 - Dynamically determine clefs for tracks.
 - Break and tie notes over bars.
 - Notate leading tones with correct accidentals.

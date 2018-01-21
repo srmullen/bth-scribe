@@ -51,13 +51,18 @@ function setQuantization (level, track) {
     track.forEach((event, i) => {
         const rem = event.absoluteTime % level;
         event.quantizedTime = rem > level / 2 ? event.absoluteTime + level - rem : event.absoluteTime - rem;
-        // event.quantizedDelta = event.quantizedTime - event.absoluteTime;
         event.quantizedDelta = event.deltaTime + (event.quantizedTime - event.absoluteTime);
     });
+}
+
+function getMeasuresFromTicks (ticksPerBeat, duration, timeSig={numerator: 4, denominator: 4}) {
+    const beats = (duration / ticksPerBeat) * (timeSig.denominator / 4);
+    return Math.ceil(beats / timeSig.numerator);
 }
 
 module.exports = {
     ticksToDuration,
     setAbsoluteTicks,
-    setQuantization
+    setQuantization,
+    getMeasuresFromTicks
 };

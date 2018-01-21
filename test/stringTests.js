@@ -1,7 +1,7 @@
 const {expect} = require('chai');
 const teoria = require('teoria');
 const stringify = require('../src/stringify');
-const {NOTES, MAJOR, MINOR} = require('../src/constants');
+const {NOTES, MAJOR, MINOR, NOTE} = require('../src/constants');
 
 describe('string', () => {
     describe('note to string', () => {
@@ -56,13 +56,11 @@ describe('string', () => {
         });
 
         it('creates boethius notes', () => {
-            const n1 = teoria.note('a4');
-            n1.duration = [{value: 4, dots: 0}];
+            const n1 = {type: NOTE, note: teoria.note('a4'), duration: [{value: 4, dots: 0}]};
             expect(stringify.track({name: 'track1', events: [n1]})).to.equal(
                 '[track1 A4/4 ]'
             );
-            const n2 = teoria.note('c#5');
-            n2.duration = [{value: 8, dots: 1}];
+            const n2 = {type: NOTE, note: teoria.note('c#5'), duration: [{value: 8, dots: 1}]};
             expect(stringify.track({
                 name: 'track1',
                 events: [n1, n2]

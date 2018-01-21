@@ -1,5 +1,6 @@
 const teoria = require('teoria');
-const {ticksToDuration, setAbsoluteTicks, setQuantization} = require('./time');
+const {max, last} = require('lodash');
+const {ticksToDuration, setAbsoluteTicks, setQuantization, getMeasuresFromTicks} = require('./time');
 const stringify = require('./stringify');
 const {getKey} = require('./utils');
 const {NOTE_ON, NOTE_OFF, NOTE, CHORD, REST, NOTES, MAJOR}= require('./constants');
@@ -38,7 +39,12 @@ function createTrack (ticksPerBeat, events, options = {}) {
             if (acc.previousEvent.quantizedTime !== event.quantizedTime) {
                 // need to add rest.
                 const deltaTime = event.quantizedTime - acc.previousEvent.quantizedTime;
-                acc.events = acc.events.concat({type: REST, duration: ticksToDuration(ticksPerBeat, deltaTime)});
+                acc.events = acc.events.concat({
+                    type: REST,
+                    duration: ticksToDuration(ticksPerBeat, deltaTime),
+                    startsAtTicks: acc.previousEvent.quantizedTime,
+                    durationTicks: deltaTime
+                });
             } else if (acc.previousEvent.type === NOTE_ON) {
                 if (acc.chord) {
                     acc.chord.events.push(event);
@@ -46,14 +52,16 @@ function createTrack (ticksPerBeat, events, options = {}) {
                     const chord = {
                         type: CHORD,
                         events: [acc.previousEvent, event],
-                        notes: []
+                        notes: [],
+                        startsAtTicks: acc.previousEvent.quantizedTime,
                     };
                     acc.chord = chord;
                 }
             }
         } else if (event.type === NOTE_OFF) {
             const note = teoria.note.fromMIDI(event.noteNumber);
-            note.duration = ticksToDuration(ticksPerBeat, event.quantizedDelta);
+            const duration = ticksToDuration(ticksPerBeat, event.quantizedDelta);
+            note.duration = duration;
             // NOTE: Notes are haveing a duration of Infinity due to quantized delta of 0.
             // Generally looks to be caused by trills.
             // if (!isFinite(note.duration[0].value)) {
@@ -61,6 +69,7 @@ function createTrack (ticksPerBeat, events, options = {}) {
             // }
             if (acc.chord) {
                 acc.chord.notes.push(note);
+                if (!acc.chord.durtationTicks) acc.chord.durationTicks = event.quantizedDelta;
                 if (acc.chord.events.length === acc.chord.notes.length) {
                     if (!acc.chord.duration) {
                         acc.chord.duration = acc.chord.notes[0].duration;
@@ -69,7 +78,13 @@ function createTrack (ticksPerBeat, events, options = {}) {
                     acc.chord = null;
                 }
             } else {
-                acc.events = acc.events.concat(note);
+                acc.events = acc.events.concat({
+                    type: NOTE,
+                    note,
+                    duration,
+                    startsAtTicks: acc.previousEvent.quantizedTime,
+                    durationTicks: event.quantizedDelta
+                });
             }
         }
         acc.previousEvent = event;
@@ -85,6 +100,7 @@ function createTrack (ticksPerBeat, events, options = {}) {
 
 // Given a parsed midi file, returns a json layout.
 function midiToLayout (midi, bth, options = {}) {
+    const measuresPerSystem = options.measuresPerSystem || 4;
     const timeSignature = midi.tracks[0].find(e => e.type === 'timeSignature');
     const timeSignatures = [];
     if (timeSignature) timeSignatures.push({
@@ -95,6 +111,28 @@ function midiToLayout (midi, bth, options = {}) {
         measure: 0,
         beat: 0
     });
+    // Get the total duration in ticks to determine number of measures.
+    const totalDuration = max(bth.map(track => {
+        const lastEvent = last(track.events);
+        return lastEvent.startsAtTicks + lastEvent.durationTicks;
+    }));
+    
+    const nMeasures = getMeasuresFromTicks(midi.header.ticksPerBeat, totalDuration, timeSignature);
+    const systems = [];
+
+    for (let i = nMeasures; i > 0; i -= measuresPerSystem) {
+        systems.push({
+            "measures": i < measuresPerSystem ? i : measuresPerSystem,
+            "lineSpacing": [],
+            "length": 1200
+        });
+    }
+
+    // Default to just one page for now.
+    const pages = [{
+        "systems": systems.length,
+        "staffSpacing": []
+    }];
     // Find tracks with noteOn events. They require lines.
     // const lineTracks = midi.tracks.filter(track => track.some(event => event.type === 'noteOn'));
     // TODO: Choose clef based on range of notes in track.
@@ -122,21 +160,9 @@ function midiToLayout (midi, bth, options = {}) {
         "type": "score",
         timeSignatures,
         "currentPage": 0,
-        "pages": [
-            {
-                "systems": 4,
-                "staffSpacing": []
-            }
-        ],
+        pages,
         lines,
-        // Need to calculate # of measures to determine # of systems needed.
-        "systems": [
-            {
-                "measures": 4,
-                "lineSpacing": [],
-                "length": 1200
-            }
-        ]
+        systems
     };
 }
 
