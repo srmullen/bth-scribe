@@ -41,15 +41,28 @@ if (program.file) {
     }
 } else if (program.indir) {
     const dir = fs.readdirSync(program.indir);
-    dir.forEach(file => {
-        const fullpath = path.join(program.indir, file);
-        if (fs.lstatSync(fullpath).isFile() && path.parse(file).ext === '.mid') {
-            const midi = fs.readFileSync(fullpath);
+    console.log("Compiling Directory");
+    dir.forEach(item => {
+        const fullpath = path.join(program.indir, item);
+        if (fs.lstatSync(fullpath).isFile() && path.parse(item).ext === '.mid') {
+            const file = fs.readFileSync(fullpath);
+            const {name} = path.parse(item);
+            const midi = parseMidi(file);
+            const [key, scale] = getKeyScale(midi, program);
+            const options = {
+                key,
+                scale
+            }
+            const bth = scribe.midiToBth(midi);
 
-            const parsed = parseMidi(midi);
-            const output = scribe.midiToBth(parsed);
+            fs.writeFileSync(path.join(outdir, name + '.bth'), stringify.bth(bth, options));
 
-            fs.writeFileSync(path.join(outdir, path.parse(file).name + '.bth'), output);
+            if (program.createlayout) {
+                const layoutName = name + '-layout.json';
+                console.log(`Createing Layout: ${layoutName}`);
+                const layout = scribe.midiToLayout(midi, bth, options);
+                fs.writeFileSync(path.join(outdir, layoutName), JSON.stringify(layout, null, '\t'));
+            }
         }
     });
 }

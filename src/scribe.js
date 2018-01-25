@@ -116,23 +116,7 @@ function midiToLayout (midi, bth, options = {}) {
         const lastEvent = last(track.events);
         return lastEvent.startsAtTicks + lastEvent.durationTicks;
     }));
-    
-    const nMeasures = getMeasuresFromTicks(midi.header.ticksPerBeat, totalDuration, timeSignature);
-    const systems = [];
 
-    for (let i = nMeasures; i > 0; i -= measuresPerSystem) {
-        systems.push({
-            "measures": i < measuresPerSystem ? i : measuresPerSystem,
-            "lineSpacing": [],
-            "length": 1200
-        });
-    }
-
-    // Default to just one page for now.
-    const pages = [{
-        "systems": systems.length,
-        "staffSpacing": []
-    }];
     // Find tracks with noteOn events. They require lines.
     // const lineTracks = midi.tracks.filter(track => track.some(event => event.type === 'noteOn'));
     // TODO: Choose clef based on range of notes in track.
@@ -153,6 +137,29 @@ function midiToLayout (midi, bth, options = {}) {
             "voices": [track.name]
         };
     });
+    const LINE_SPACING = 110;
+    const lineSpacing = lines.reduce((acc, line) => {
+        return acc.concat(LINE_SPACING);
+    }, [0]);
+    const nMeasures = getMeasuresFromTicks(midi.header.ticksPerBeat, totalDuration, timeSignature);
+    const systems = [];
+
+    for (let i = nMeasures; i > 0; i -= measuresPerSystem) {
+        systems.push({
+            "measures": i < measuresPerSystem ? i : measuresPerSystem,
+            lineSpacing,
+            "length": 1200
+        });
+    }
+
+    // Default to just one page for now.
+    const pages = [{
+        "systems": systems.length,
+        "staffSpacing": systems.reduce((acc, system) => {
+            const prev = last(acc);
+            return acc.concat(prev + (lines.length * LINE_SPACING));
+        }, [0])
+    }];
     return {
         "name": options.name || '',
         "title": options.title || '',
