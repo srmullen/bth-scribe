@@ -20,6 +20,11 @@ program
 
 const outdir = program.outdir || './';
 
+// If outdir doesn't exist then create it.
+if (!fs.existsSync(outdir)) {
+    fs.mkdirSync(outdir);
+}
+
 if (program.file) {
     const file = fs.readFileSync(program.file);
     const {name} = path.parse(program.file);
@@ -34,7 +39,7 @@ if (program.file) {
     fs.writeFileSync(path.join(outdir, name + '.bth'), stringify.bth(bth, options));
 
     if (program.createlayout) {
-        const layoutName = name + '-layout.json';
+        const layoutName = name + '.json';
         console.log(`Createing Layout: ${layoutName}`);
         const layout = scribe.midiToLayout(midi, bth, options);
         fs.writeFileSync(path.join(outdir, layoutName), JSON.stringify(layout, null, '\t'));
@@ -58,7 +63,7 @@ if (program.file) {
             fs.writeFileSync(path.join(outdir, name + '.bth'), stringify.bth(bth, options));
 
             if (program.createlayout) {
-                const layoutName = name + '-layout.json';
+                const layoutName = name + '.json';
                 console.log(`Createing Layout: ${layoutName}`);
                 const layout = scribe.midiToLayout(midi, bth, options);
                 fs.writeFileSync(path.join(outdir, layoutName), JSON.stringify(layout, null, '\t'));
