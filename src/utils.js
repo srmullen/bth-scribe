@@ -1,4 +1,5 @@
-const {NOTES, MAJOR, MINOR} = require('./constants');
+const {sum} = require('lodash');
+const {NOTES, MAJOR, MINOR, TREBLE, BASS} = require('./constants');
 
 const KEYS = [
     NOTES.Gb, NOTES.Db, NOTES.Ab, NOTES.Eb, NOTES.Bb, NOTES.F,
@@ -28,7 +29,19 @@ function getKeyScale (midi, options) {
     return [key, scale];
 }
 
+// Given the note midi numbers, returns the most appropriate clef.
+// Currently only handles bass and treble clefs.
+function getClefForNotes (notes) {
+    const avg = sum(notes) / notes.length;
+    if (avg >= 60) {
+        return TREBLE;
+    } else {
+        return BASS;
+    }
+}
+
 module.exports = {
     getKey,
-    getKeyScale
+    getKeyScale,
+    getClefForNotes
 }

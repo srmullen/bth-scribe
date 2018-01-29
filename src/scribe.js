@@ -2,7 +2,7 @@ const teoria = require('teoria');
 const {max, last} = require('lodash');
 const {ticksToDuration, setAbsoluteTicks, setQuantization, getMeasuresFromTicks} = require('./time');
 const stringify = require('./stringify');
-const {getKey} = require('./utils');
+const {getKey, getClefForNotes} = require('./utils');
 const {NOTE_ON, NOTE_OFF, NOTE, CHORD, REST, NOTES, MAJOR}= require('./constants');
 
 function midiToBth (midi) {
@@ -121,10 +121,19 @@ function midiToLayout (midi, bth, options = {}) {
     // const lineTracks = midi.tracks.filter(track => track.some(event => event.type === 'noteOn'));
     // TODO: Choose clef based on range of notes in track.
     const lines = bth.map((track) => {
+        const clef = getClefForNotes(track.events.reduce((notes, event) => {
+            if (event.type === NOTE) {
+                return notes.concat(event.note.midi());
+            } else if (event.type === CHORD) {
+                return notes.concat(event.notes.map(note => note.midi()))
+            } else {
+                return notes;
+            }
+        }, []))
         return {
             "name": "",
             "clefs": [{
-                "value": "treble",
+                "value": clef,
                 "measure": 0,
                 "beat": 0
             }],

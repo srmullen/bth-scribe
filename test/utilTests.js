@@ -1,6 +1,6 @@
 const {expect} = require('chai');
-const {getKey} = require('../src/utils');
-const {NOTES, MAJOR, MINOR} = require('../src/constants');
+const {getKey, getClefForNotes} = require('../src/utils');
+const {NOTES, MAJOR, MINOR, TREBLE, BASS} = require('../src/constants');
 
 describe('utils', () => {
     describe('getKey', () => {
@@ -18,6 +18,15 @@ describe('utils', () => {
             expect(getKey(-6, 1)).to.eql([NOTES.Eb, MINOR]);
             expect(getKey(1, 1)).to.eql([NOTES.E, MINOR]);
             expect(getKey(7, 1)).to.eql([NOTES.AS, MINOR]);
+        });
+    });
+
+
+    describe('getClefForNotes', () => {
+        it('should return treble if the average note is above middle C', () => {
+            expect(getClefForNotes([70, 59])).to.equal(TREBLE);
+            expect(getClefForNotes([61, 50])).to.equal(BASS);
+            expect(getClefForNotes([60])).to.equal(TREBLE);
         });
     });
 });

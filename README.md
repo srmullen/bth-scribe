@@ -6,13 +6,12 @@ Tool for converting midi files to the bth music notation format.
 
 TODO
 ----
-- command line args. i.e. Rules for output format
 - Event grouping options.
 - Detect trills
 - Strip out notes that are too fast.
-- Dynamically determine clefs for tracks.
 - Break and tie notes over bars.
 - Notate leading tones with correct accidentals.
+- Notate tempo.
 
 - When quantizing, long notes may need to be broken into tied notes. e.x.
 ```javascript

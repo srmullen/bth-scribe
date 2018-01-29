@@ -26,6 +26,11 @@ const NOTES = {
     B: 'B'
 }
 
+const TREBLE = 'treble';
+const BASS = 'bass';
+const ALTO = 'alto';
+const TENOR = 'tenor';
+
 module.exports = {
     NOTE,
     REST,
@@ -34,5 +39,9 @@ module.exports = {
     NOTE_OFF,
     MAJOR,
     MINOR,
-    NOTES
+    NOTES,
+    TREBLE,
+    BASS,
+    ALTO,
+    TENOR
 }

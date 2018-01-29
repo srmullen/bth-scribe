@@ -89,8 +89,8 @@ describe('Scribe', () => {
 
         it('should create a line for each track in bth', () => {
             const bth = [
-                {events: [{startsAtTicks: 0, durationTicks: 1}]},
-                {events: [{startsAtTicks: 1, durationTicks: 2}]}
+                {events: [{type: NOTE, note: teoria.note(60), startsAtTicks: 0, durationTicks: 1}]},
+                {events: [{type: NOTE, note: teoria.note(60), startsAtTicks: 1, durationTicks: 2}]}
             ];
             const layout = midiToLayout(midi, bth, {});
             expect(layout.lines.length).to.equal(2);
@@ -114,8 +114,8 @@ describe('Scribe', () => {
                 ]
             };
             const bth = [
-                {events: [{type: NOTE, startsAtTicks: 960, durationTicks: 480}], name: 'trebleTrack'},
-                {events: [{type: NOTE, startsAtTicks: 1440, durationTicks: 480}], name: 'bassTrack'}
+                {events: [{type: NOTE, note: teoria.note(60), startsAtTicks: 960, durationTicks: 480}], name: 'trebleTrack'},
+                {events: [{type: NOTE, note: teoria.note(60), startsAtTicks: 1440, durationTicks: 480}], name: 'bassTrack'}
             ];
             const layout = midiToLayout(midi, bth, {});
             expect(layout.systems.length).to.equal(1);
@@ -130,8 +130,8 @@ describe('Scribe', () => {
                 ]
             };
             const bth = [
-                {events: [{type: NOTE, startsAtTicks: 960, durationTicks: 480}], name: 'trebleTrack'},
-                {events: [{type: NOTE, startsAtTicks: 960 * 7, durationTicks: 60}], name: 'bassTrack'}
+                {events: [{type: NOTE, note: teoria.note(60), startsAtTicks: 960, durationTicks: 480}], name: 'trebleTrack'},
+                {events: [{type: NOTE, note: teoria.note(60), startsAtTicks: 960 * 7, durationTicks: 60}], name: 'bassTrack'}
             ];
             const layout = midiToLayout(midi, bth, {measuresPerSystem: 3});
             expect(layout.systems.length).to.equal(3);
